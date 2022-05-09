@@ -1,0 +1,8 @@
+{
+  ".*\/p$": [
+    "productDetailAddon"
+  ],
+  ".*\/checkout/$": [
+    "cartAddon"
+  ]
+}

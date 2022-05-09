@@ -1,0 +1,16 @@
+{
+  "vendor": "acuotaz",
+  "name": "acuotaz-scripts-app",
+  "version": "0.0.1",
+  "title": "Acuotaz scripts app",
+  "description": "Acuotaz scripts for legacy CMS",
+  "builders": {
+    "scripts": "0.x"
+  },
+  "dependencies": {},
+  "registries": [
+    "smartcheckout"
+  ],
+  "policies": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

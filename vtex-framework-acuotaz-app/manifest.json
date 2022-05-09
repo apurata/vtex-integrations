@@ -1,0 +1,21 @@
+{
+  "vendor": "acuotaz",
+  "name": "acuotaz",
+  "version": "0.0.0",
+  "title": "Acuotaz plugin",
+  "description": "Acuotaz plugin",
+  "builders": {
+    "react": "3.x",
+    "messages": "1.x",
+    "docs": "0.x",
+    "store": "0.x"
+  },
+  "dependencies": {
+    "vtex.store": "2.x"
+  },
+  "registries": [
+    "smartcheckout"
+  ],
+  "policies": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
