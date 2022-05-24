@@ -174,7 +174,7 @@
 
   "acuotaz-addon": {
     "props": {
-      "token": "ca8dc31e25f44050811fe0d63d2a5d58"
+      "clientId": "vtex_test"
     }
   },
 
