@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
 
 
-function AcuotazAddon({ token, amount, productQuery }: any) {
+function AcuotazAddon({ clientId, amount, productQuery }: any) {
   const [loading, setLoading] = useState(true);
   const [addonHtml, setAddonHtml] = useState('');
 
   useEffect(() => {
-    const headers = { Authorization: `Bearer ${token}` };
+    const headers = { Client_id: clientId };
     let price = amount;
     if (!price) {
       const prices = productQuery?.product?.priceRange;
@@ -23,7 +23,7 @@ function AcuotazAddon({ token, amount, productQuery }: any) {
       return;
     }
     fetch(
-      `https://apurata.com/pos/pay-with-apurata-add-on/${price}`,
+      `https://apurata.com/pos/pay-with-apurata-add-on/${price}?page=product`,
       {
         method: 'GET',
         headers,

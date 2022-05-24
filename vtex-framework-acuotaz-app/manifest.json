@@ -1,7 +1,7 @@
 {
   "vendor": "acuotaz",
-  "name": "acuotaz",
-  "version": "0.0.0",
+  "name": "plugin",
+  "version": "0.1.0",
   "title": "Acuotaz plugin",
   "description": "Acuotaz plugin",
   "builders": {
