@@ -1,29 +1,25 @@
 import React, { useState, useEffect } from 'react'
 
+import { useProduct } from 'vtex.product-context'
 
-function AcuotazAddon({ clientId, amount, productQuery }: any) {
+import { getDefaultSeller } from './modules/seller'
+
+function AcuotazAddon({ clientId }: any) {
+  const productContextValue = useProduct()
+  const seller = getDefaultSeller(productContextValue?.selectedItem?.sellers)
+  const commercialOffer = seller?.commertialOffer
+  const sellingPriceValue = commercialOffer?.Price
   const [loading, setLoading] = useState(true);
   const [addonHtml, setAddonHtml] = useState('');
 
   useEffect(() => {
     const headers = { Client_id: clientId };
-    let price = amount;
-    if (!price) {
-      const prices = productQuery?.product?.priceRange;
-      price = (
-        prices.sellingPrice?.lowPrice
-        || prices.sellingPrice?.highPrice
-        || prices.listPrice?.lowPrice
-        || prices.listPrice?.highPrice
-      );
-      price = Math.round(price);
-    }
-    if (!price) {
+    if (!sellingPriceValue) {
       setLoading(false);
       return;
     }
     fetch(
-      `https://apurata.com/pos/pay-with-apurata-add-on/${price}?page=product`,
+      `https://apurata.com/pos/pay-with-apurata-add-on/${sellingPriceValue}?page=product`,
       {
         method: 'GET',
         headers,
