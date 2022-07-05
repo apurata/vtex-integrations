@@ -10,6 +10,10 @@
     "docs": "0.x",
     "store": "0.x"
   },
+  "billingOptions": {
+    "free": true,
+    "type": "free"
+  },
   "dependencies": {
     "vtex.store": "2.x",
     "vtex.product-context": "0.x"
