@@ -4,6 +4,16 @@
   "version": "3.0.0",
   "title": "Acuotaz plugin",
   "description": "Acuotaz plugin",
+  "billingOptions": {
+    "type": "free",
+    "support": {
+      "email": "jose@apurata.com",
+      "url": "https://apurata.com/"
+    },
+    "availableCountries": [
+      "*"
+    ]
+  },
   "builders": {
     "react": "3.x",
     "messages": "1.x",
