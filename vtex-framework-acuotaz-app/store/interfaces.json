@@ -1,5 +1,8 @@
 {
   "acuotaz-addon": {
     "component": "AcuotazAddon"
+  },
+  "acuotaz-headband": {
+    "component": "AcuotazHeadBand"
   }
 }
