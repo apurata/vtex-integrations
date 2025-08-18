@@ -7,11 +7,17 @@
   },
   "header-layout.desktop": {
     "children": [
+      "acuotaz-headband",
       "flex-layout.row#1-desktop",
       "flex-layout.row#2-desktop",
-      "flex-layout.row#3-desktop",
-      "sticky-layout#4-desktop"
+      "flex-layout.row#3-desktop"
     ]
+  },
+
+  "acuotaz-headband": {
+    "props": {
+      "clientId": "vtex_test"
+    }
   },
 
   "flex-layout.row#1-desktop": {
@@ -97,7 +103,7 @@
     }
   },
   "header-layout.mobile": {
-    "children": ["sticky-layout#1-mobile"]
+    "children": ["acuotaz-headband"]
   },
   "sticky-layout#1-mobile": {
     "children": ["flex-layout.row#1-mobile"]
