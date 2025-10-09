@@ -273,11 +273,6 @@ vtex use tu-nombre-dev
 # Ejemplo: vtex use juan-acuotaz-dev
 ```
 
-### 3. Configurar Entorno de Desarrollo
-Antes de continuar, asegúrate de que el código esté configurado para desarrollo:
-- Verifica que `AcuotazHeadBand.tsx` use `http://localhost:9000`
-- Verifica que el `clientId` sea `"vtex_test"`
-
 ### 4. Instalar Dependencias
 Sigue las instrucciones de instalación del plugin mencionadas anteriormente:
 ```bash
