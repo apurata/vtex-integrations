@@ -1,3 +1,8 @@
+# DEPRECATED
+
+Keep this repository to backward compatibility.
+Use vtex-framework-acuotaz-widgets instead
+
 # aCuotaz VTEX Integration
 
 Integración de la solución de pagos en cuotas **aCuotaz** para tiendas VTEX.
